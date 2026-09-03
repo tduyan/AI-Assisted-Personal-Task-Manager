@@ -1,0 +1,36 @@
+[
+    {
+        "id": "b6cccdca-5fb3-41e6-81d0-28a6217c3d0d",
+        "title": "Write project documentation",
+        "description": "Complete the README and API docs for the project.",
+        "status": "incomplete",
+        "created_at": "2026-09-02T00:05:52.364671Z",
+        "updated_at": "2026-09-02T00:05:52.364671Z",
+        "completed_at": null,
+        "due_date": "2023-10-15T12:00:00Z",
+        "reminder_at": "2023-10-14T12:00:00Z",
+        "priority": "high",
+        "list_id": "work",
+        "recurrence_rule": null,
+        "parent_task_id": null,
+        "sort_order": null,
+        "deleted_at": null
+    },
+    {
+        "id": "0a7b9c76-b9aa-40db-a651-bb6409795772",
+        "title": "make dinner",
+        "description": "make chicken rice",
+        "status": "incomplete",
+        "created_at": "2026-09-02T00:19:55.781085Z",
+        "updated_at": "2026-09-02T00:19:55.781085Z",
+        "completed_at": null,
+        "due_date": "2026-09-02",
+        "reminder_at": "-",
+        "priority": "medium",
+        "list_id": "default_list",
+        "recurrence_rule": null,
+        "parent_task_id": null,
+        "sort_order": null,
+        "deleted_at": null
+    }
+]
