@@ -32,5 +32,39 @@
         "parent_task_id": null,
         "sort_order": null,
         "deleted_at": null
+    },
+    {
+        "id": "10caafbb-0947-448d-9fe4-d2e22c709000",
+        "title": "pick up groceries",
+        "description": "walmart",
+        "status": "incomplete",
+        "created_at": "2026-09-03T21:40:41.436417Z",
+        "updated_at": "2026-09-03T21:40:41.436417Z",
+        "completed_at": null,
+        "due_date": "2026-09-04",
+        "reminder_at": null,
+        "priority": null,
+        "list_id": "default_list",
+        "recurrence_rule": null,
+        "parent_task_id": null,
+        "sort_order": null,
+        "deleted_at": null
+    },
+    {
+        "id": "4224f645-1506-46c3-a013-33ee46fd9fee",
+        "title": "workout",
+        "description": "badminton",
+        "status": "incomplete",
+        "created_at": "2026-09-03T22:31:27.496795Z",
+        "updated_at": "2026-09-03T22:31:27.496795Z",
+        "completed_at": null,
+        "due_date": null,
+        "reminder_at": null,
+        "priority": "low",
+        "list_id": "default_list",
+        "recurrence_rule": null,
+        "parent_task_id": null,
+        "sort_order": null,
+        "deleted_at": null
     }
 ]
