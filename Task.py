@@ -33,9 +33,9 @@ class Task:
 
     def mark_complete(self):
         """Mark the task as complete."""
-        self.status = "complete"
-        self.completed_at = datetime.utcnow().isoformat() + "Z"
-        self.updated_at = self.completed_at
+        self.status = "complete" # Update the status to "complete"
+        self.completed_at = datetime.utcnow().isoformat() + "Z" # Set the completed_at timestamp 
+        self.updated_at = self.completed_at # Update the updated_at timestamp to the current time
 
     def mark_incomplete(self):
         """Mark the task as incomplete."""
