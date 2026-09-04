@@ -46,6 +46,21 @@ class TaskCLI:
             for task in tasks:
                 print(f"{task.id}: {task.title} - {task.status}")
 
+    def complete_task(self):
+        """Mark a task as completed."""
+        try:
+            task_id = input("Enter task ID to mark as completed: ").strip()
+            # Find the task by ID
+            for task in self.task_manager.tasks:
+                if task.id == task_id:
+                    task.mark_complete()  # Call the Task class method
+                    self.task_manager.save_tasks()  # Save changes
+                    print(f"Task '{task.title}' marked as completed.")
+                    return
+            print("Task not found. Please enter a valid task ID.")
+        except Exception as e:
+            print("Error:", e)
+
     def run(self):
         """Run the CLI menu loop."""
         while True:
@@ -55,6 +70,8 @@ class TaskCLI:
                 self.add_task()
             elif choice == "2":
                 self.view_tasks()
+            elif choice == "3":
+                self.complete_task()
             elif choice == "5":
                 print("Exiting Task Manager. Goodbye!")
                 break
