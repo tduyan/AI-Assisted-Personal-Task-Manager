@@ -31,12 +31,15 @@ class TaskManager:
         self.save_tasks()
 
     def remove_task(self, task_id: str) -> bool:
-        """Remove a task by its ID."""
+        # Ensure self.tasks is a list and add logging for debugging
+        if not isinstance(self.tasks, list):
+            raise TypeError("Tasks must be stored as a list.")
         for i, task in enumerate(self.tasks):
             if task.id == task_id:
                 del self.tasks[i]
                 self.save_tasks()
                 return True
+        print(f"Task with ID '{task_id}' not found.")
         return False
 
     def list_tasks(self) -> List[Task]:

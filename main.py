@@ -17,10 +17,14 @@ class TaskCLI:
         """Prompt the user to add a new task."""
         try:
             title = input("Enter task title: ").strip()
+            if not title:
+                raise ValueError("Task title cannot be empty.")
             description = input("Enter task description (optional): ").strip() or None
             due_date = input("Enter due date (optional, format: YYYY-MM-DDTHH:MM:SSZ): ").strip() or None
             reminder_at = input("Enter reminder date (optional, format: YYYY-MM-DDTHH:MM:SSZ): ").strip() or None
             priority = input("Enter priority (optional, choose from 'low', 'medium', 'high'): ").strip() or None
+            if priority and priority not in ["low", "medium", "high"]:
+                raise ValueError("Priority must be 'low', 'medium', or 'high'.")
             list_id = input("Enter list ID (optional, default is 'default_list'): ").strip() or "default_list"
 
             task = Task.Task(
