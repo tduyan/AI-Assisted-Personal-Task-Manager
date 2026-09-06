@@ -61,6 +61,18 @@ class TaskCLI:
         except Exception as e:
             print("Error:", e)
 
+    def delete_task(self):
+        """Delete a task by its ID."""
+        try:
+            task_id = input("Enter task ID to delete: ").strip()
+            # Use TaskManager's remove_task method to delete the task
+            if self.task_manager.remove_task(task_id):
+                print(f"Task with ID '{task_id}' has been deleted successfully.")
+            else:
+                print("Task not found. Please enter a valid task ID.")
+        except Exception as e:
+            print("Error:", e)
+
     def run(self):
         """Run the CLI menu loop."""
         while True:
@@ -72,6 +84,8 @@ class TaskCLI:
                 self.view_tasks()
             elif choice == "3":
                 self.complete_task()
+            elif choice == "4":
+                self.delete_task()
             elif choice == "5":
                 print("Exiting Task Manager. Goodbye!")
                 break
