@@ -44,4 +44,5 @@ class TaskManager:
 
     def list_tasks(self) -> List[Task]:
         """Return the list of tasks."""
-        return self.tasks
+        #return self.tasks
+        
