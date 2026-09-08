@@ -1,0 +1,5 @@
+## Where AI saved you the most time, one example where AI output was incomplete or incorrect and how you caught and fixed it?
+AI-assisted development is an excellent tool for getting started with application building, especially for those with limited experience or those returning to development after a break. Many developers face challenges in knowing where or how to begin a project, and AI provides clear and straightforward guidance. However, there is still room for improvement to make the program more maintainable, scalable, and reliable.
+
+## One thing you now understand better because you had to review AI-generated code rather than write it yourself
+One of the key concepts I was able to revisit and apply in this project is object-oriented programming (OOP). Initially, the AI assistant generated a program contained entirely within a single file. Once the workflow was fully functional, I chose to restructure the project by breaking it into smaller, modular components, making it more maintainable and scalable for future development using an OOP approach.
